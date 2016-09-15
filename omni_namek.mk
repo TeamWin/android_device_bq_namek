@@ -7,9 +7,8 @@ else
 endif
 
 PRODUCT_COPY_FILES += \
-    device/bq/namek/kernel:kernel \
-    device/bq/namek/recovery/init.recovery.qcom.rc:root/init.recovery.qcom.rc \
-    device/bq/namek/recovery/sbin/healthd:root/sbin/healthd
+    bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata \
+    device/bq/namek/kernel:kernel
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := namek
