@@ -32,7 +32,7 @@ on property:sys.usb.config=adb
 on init
     write /sys/devices/soc.0/78b9000.i2c/i2c-5/5-004a/gesture_list "TAP 1;"
     write /sys/devices/soc.0/78b9000.i2c/i2c-5/5-004a/plugin "pl enable 16"
-    write /sys/devices/soc.0/78b9000.i2c/i2c-5/5-004a/en_gesture 1
+    write /sys/class/touchscreen/en_gesture 1
 
 service sbinqseecomd /sbin/qseecomd.sh
     oneshot
