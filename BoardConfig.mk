@@ -13,6 +13,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
+TARGET_INCLUDE_KEYMASTER_PARTITION_CHECK := true
 
 # Kernel
 TARGET_PREBUILT_KERNEL := device/bq/namek/kernel
